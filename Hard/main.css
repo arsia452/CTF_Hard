@@ -1,0 +1,141 @@
+
+
+html {
+        --crimson: #8b0000;
+        --rose: #c2185b;
+        --ivory: #fdf6f0;
+        --ink: #1f1f1f;
+        --gold: #c9a24d;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Georgia", "Times New Roman", serif;
+        background: linear-gradient(180deg, #1a0000, #3b0000);
+        color: var(--ivory);
+        line-height: 1.6;
+    }
+
+    header {
+        background: radial-gradient(circle at top, #5a0000, #1a0000);
+        border-bottom: 2px solid var(--gold);
+        padding: 2.5rem 1rem;
+        text-align: center;
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 3rem;
+        letter-spacing: 0.1rem;
+        color: #ffdddd;
+    }
+
+    header p {
+        margin-top: 0.5rem;
+        font-style: italic;
+        color: #f3b6b6;
+    }
+
+    nav {
+        background-color: #240000;
+        border-bottom: 1px solid var(--gold);
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 0.25rem 1rem;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #ffdada;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: var(--gold);
+    }
+
+    main {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 0 1.25rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+        background: rgba(0, 0, 0, 0.25);
+        border-left: 4px solid var(--rose);
+        border-radius: 6px;
+    }
+
+    section h2 {
+        margin-top: 0;
+        color: #ffcccc;
+        border-bottom: 1px solid var(--gold);
+        padding-bottom: 0.25rem;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1.5rem;
+        background-color: #140000;
+        border-top: 1px solid var(--gold);
+        font-size: 0.9rem;
+        color: #d8bcbc;
+    }
+
+    .infobox {
+        float: right;
+        width: 260px;
+        margin: 0 0 1rem 1rem;
+        padding: 1rem;
+        background: rgba(60, 0, 0, 0.85);
+        border: 1px solid var(--gold);
+        border-radius: 6px;
+        font-size: 0.9rem;
+    }
+
+    .infobox h3 {
+        margin-top: 0;
+        text-align: center;
+        color: #ffdede;
+    }
+
+    .infobox strong {
+        color: var(--gold);
+    }
+
+    @media (max-width: 700px) {
+    .infobox {
+        float: none;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    
+    table, tr, th, td, caption{
+    border: 1px solid #eee;
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+    }
+
+
+    }
